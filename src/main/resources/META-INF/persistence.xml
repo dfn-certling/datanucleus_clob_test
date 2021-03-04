@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+        http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1">
+
+    <persistence-unit name="Test">
+        <class>de.dfncert.datanucleus_clob_test.Test</class>
+        <exclude-unlisted-classes/>
+        <properties>
+            <property name="javax.jdo.option.ConnectionURL" value="jdbc:postgresql://localhost:5432/test"/>
+            <property name="javax.jdo.option.ConnectionUserName" value="test"/>
+            <property name="javax.jdo.option.ConnectionPassword" value="test"/>
+            <property name="datanucleus.schema.autoCreateAll" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
